@@ -13,7 +13,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace FuelStation
+namespace Lab_3
 {
     public class Program
     {
@@ -113,7 +113,7 @@ namespace FuelStation
                     IEnumerable<Genre> genres = cachedGenreService.GetGenre();
                     string HtmlString = "<HTML><HEAD><TITLE>Жанры</TITLE></HEAD>" +
                     "<META http-equiv='Content-Type' content='text/html; charset=utf-8'/>" +
-                    "<BODY><H1>Список жанрой</H1>" +
+                    "<BODY><H1>Список жанров</H1>" +
                     "<TABLE BORDER=1>";
                     HtmlString += "<TR>";
                     HtmlString += "<TH>Код</TH>";
@@ -338,7 +338,7 @@ namespace FuelStation
             // Стартовая страница и кэширование данных таблицы на web-сервере
             app.Run((context) =>
             {
-                string HtmlString = "<HTML><HEAD><TITLE>Емкости</TITLE></HEAD>" +
+                string HtmlString = "<HTML><HEAD><TITLE>Телепередачи</TITLE></HEAD>" +
                 "<META http-equiv='Content-Type' content='text/html; charset=utf-8'/>" +
                 "<BODY><H1>Главная</H1>";
                 HtmlString += "<H2>Данные записаны в кэш сервера</H2>";
